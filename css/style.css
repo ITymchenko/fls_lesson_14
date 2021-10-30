@@ -1,0 +1,336 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap&subset=cyrillic-ext');
+/* font-family: "Roboto", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* font-family: "Poppins", sans-serif; */
+
+    @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueBoldCondensed.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBoldCondensed.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueBlackCondensed.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBlackCondensed.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+/* font-family: "Helvetica Neue", sans-serif;  */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #d5d4d4;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    font-size: 0;
+}
+
+/* -------------------------------------- */
+.header {
+    text-align: center;
+    padding: 50px;
+    background: #29C3BE;
+    margin: 0 0 200px 0;
+}
+
+.header__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+}
+
+/* .main {
+} */
+
+.main__doggie-block {
+    margin: 0 auto;
+}
+
+.doggie-block {
+    max-width: 1440px;
+    background: url("../img/blob.png") 83% 0 no-repeat, #29C3BE;
+    padding: 110px 0 212px 0;
+    box-shadow: 10px 10px 20px #7e7f7f;
+}
+
+.doggie-block__container {
+    max-width: 1020px;
+    margin: 0 auto
+}
+
+/* .doggie-block__header {
+} */
+
+.doggie-block__flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.doggie-block__subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 27px; /*выравниваем иконку на уровень текста с помощью увеличения/уменьшения междустрочного интервала*/
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: url("../img/mark.svg") 0 0 no-repeat;
+    padding: 0 0 0 32px; /*растояние от текста до иконки + размер иконки*/
+    margin: 0 0 32px 0;
+}
+
+.doggie-block__title {
+    max-width: 411px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin: 0 0 75px 0;
+}
+
+/* .doggie-block__image {
+} */
+
+.doggie-block__img {
+    border-radius: 40px;
+    margin: -190px 0 0 0;
+}
+
+/* .doggie-block__content {
+} */
+
+/* .content-block {
+} */
+
+.content-block__items {
+    display: flex;
+    justify-content: space-between;
+}
+.content-block__item {
+    display: flex;
+    column-gap: 12px;
+    flex: 0 1 23.24%;
+
+}
+
+/* .content-block__image {
+} */
+
+/* .content-block__img {
+} */
+
+/* .content-block__info {
+} */
+
+.content-block__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+    margin: 0 0 3px 0;
+}
+
+.content-block__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #5D62B5;
+}
+
+.main__appointment-block {
+    margin: -75px auto 150px;
+}
+
+.appointment-block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1020px;
+    background: #5D62B5;
+    border-radius: 20px;
+    padding: 45px 70px 45px 70px;
+}
+
+.appointment-block__title {
+    display: flex;
+    flex: 0 1 57%;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    /* margin: 0 100px 0 0; */
+}
+
+.appointment-block__link {
+    display: inline-flex;
+    flex: 0 1 25%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #F2726F;
+    border-radius: 8px;
+}
+
+.appointment-block__link:hover {
+    opacity: 0.6;
+}
+/* ----------------------------------------------------------- */
+.main__promise-block {
+    margin: 0 auto 150px;
+}
+
+.block-promise {
+    max-width: 1020px;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px #7e7f7f;
+}
+
+.block-promise__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 27px; /*значение завышено для того, чтобы выровнять уровень с картинкой*/
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #5D62B5;
+    background: url("../img/mark2.svg") 0 0 no-repeat;
+    padding: 0 0 0 33px; /*30пк это растояние от текста до логотипа 16пк + размер логотипа 17пк = 33*/
+    margin: 0 0 35px 0; /*отступ сделан на глаз, меньше чем по макету, т.к. нужно учесть высоту самого объекта*/
+}
+.block-promise__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+    margin: 0 0 72px 0;
+}
+.block-promise__container {
+    margin: 0 auto;
+}
+
+/* .container-promise {
+} */
+
+.container-promise__items {
+    display: flex;
+    justify-content: space-between;
+}
+/* .container-promise__item {
+} */
+
+.item-promise {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 31.76%;
+}
+
+/* .item-promise__content {
+} */
+
+/* .item-promise__image {
+} */
+
+/* .item-promise__img {
+} */
+
+.item-promise__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    color: #F2726F;
+}
+.item-promise__text {
+    max-width: 235px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+}
+
+/* ------------------------------------------------------------- */
+.footer {
+    padding: 50px;
+    background: #29C3BE;
+}
+
+.footer__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+}
